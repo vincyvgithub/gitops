@@ -1,1 +1,1 @@
-Line 1: Hello from main branch
+Line 1: Hello from both branch
