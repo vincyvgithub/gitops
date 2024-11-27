@@ -30,10 +30,10 @@ jobs:
       run: |
         az aks get-credentials --resource-group eycluster_group --name eycluster --overwrite-existing
       env:
-        AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-        AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-        AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-        AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+        AZURE_CLIENT_ID: ${{ secrets.clientId }}
+        AZURE_TENANT_ID: ${{ secrets.tenantId }}
+        AZURE_SUBSCRIPTION_ID: ${{ secrets.subscriptionId }}
+        AZURE_CLIENT_SECRET: ${{ secrets.clientSecret }}
 
     # Step 5: Deploy Kubernetes manifests
     - name: Deploy to AKS
